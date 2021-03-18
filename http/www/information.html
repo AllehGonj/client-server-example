@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +14,8 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
 <body>
-<section class="hero is-fullheight is-default is-bold">
-
+<section class="section is-fullheight is-default is-medium" style="padding-top: 0;">
     <nav x-data="initNavbar()" class="navbar is-fresh is-transparent no-shadow" role="navigation"
          aria-label="main navigation">
         <div class="container">
@@ -44,10 +41,10 @@
                         '': !mobileOpen
                     }">
                 <div class="navbar-end">
-                    <a href="#" class="navbar-item is-secondary">
+                    <a href="index.html" class="navbar-item is-secondary">
                         Inicio
                     </a>
-                    <a href="information.html" class="navbar-item is-secondary">
+                    <a href="#" class="navbar-item is-secondary">
                         Informacion
                     </a>
                     <a href="contact.html" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
@@ -69,10 +66,10 @@
                     }">
 
                 <div class="navbar-end">
-                    <a href="#" class="navbar-item is-secondary">
+                    <a href="index.html" class="navbar-item is-secondary">
                         Inicio
                     </a>
-                    <a href="information.html" class="navbar-item is-secondary">
+                    <a href="#" class="navbar-item is-secondary">
                         Informacion
                     </a>
                     <a href="contact.html" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
@@ -82,76 +79,35 @@
             </div>
         </div>
     </nav>
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-5 is-offset-1 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">
-                        Ama a los animalitos
-                    </h1>
-                    <h2 class="subtitle is-5 is-muted">Lorem ipsum sit dolor amet is a dummy text used by typography
-                        industry </h2>
-                </div>
-                <div class="column is-5">
-                    <figure class="image is-4by3">
-                        <img src="img/3.png" alt="Description">
-                    </figure>
-                </div>
 
-            </div>
-        </div>
-    </div>
-</section>
+    <br>
 
-<section class="section section-feature-grey is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2">Un gran poder</h2>
-            <h3 class="subtitle is-5 is-muted">Conlleva una gran responsabilidad</h3>
+            <h2 class="title is-2">Mas acerca de los animalitos</h2>
+            <h3 class="subtitle is-5 is-muted">Que te hacen feliz</h3>
             <div class="divider is-centered"></div>
         </div>
 
-        <div class="content-wrapper">
-            <div class="columns">
-                <div class="column is-one-third">
-                    <div class="feature-card is-bordered has-text-centered is-feature-reveal">
-                        <div class="card-title">
-                            <h4>Amistosos</h4>
-                        </div>
-                        <div class="card-icon">
-                            <img src="img/icons/web.svg">
-                        </div>
-                        <div class="card-text">
-                            <p>Lorem ipsum sit dolor amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="feature-card is-bordered has-text-centered is-feature-reveal">
-                        <div class="card-title">
-                            <h4>Nobles</h4>
-                        </div>
-                        <div class="card-icon">
-                            <img src="img/icons/rocket.svg">
-                        </div>
-                        <div class="card-text">
-                            <p>Lorem ipsum sit dolor amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="feature-card is-bordered has-text-centered is-feature-reveal">
-                        <div class="card-title">
-                            <h4>Juguetones</h4>
-                        </div>
-                        <div class="card-icon">
-                            <img src="img/icons/light-bulb.svg">
-                        </div>
-                        <div class="card-text">
-                            <p>Lorem ipsum sit dolor amet</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="columns is-vcentered side-feature mt-60">
+            <div class="column is-4 is-offset-2">
+                <h3 class="title is-3 mb-10 is-title-reveal">Les gusta que los consientan</h3>
+                <p class="subtitle is-5 is-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum audissem
+                    Antiochum, Brute, ut solebam, cum M. Quae diligentissime contra Aristonem dicuntur a Chryippo.</p>
+            </div>
+            <div class="column is-5">
+                <img src="img/1.png" alt="">
+            </div>
+        </div>
+
+        <div class="columns is-vcentered side-feature mt-60">
+            <div class="column is-5 is-offset-1">
+                <img src="img/2.png" alt="">
+            </div>
+            <div class="column is-4 is-offset-1">
+                <h3 class="title is-3 mb-10 is-title-reveal">Ellos estan tambien para ti</h3>
+                <p class="subtitle is-5 is-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum audissem
+                    Antiochum, Brute, ut solebam, cum M. Quae diligentissime contra Aristonem dicuntur a Chryippo.</p>
             </div>
         </div>
     </div>
@@ -201,7 +157,5 @@
 
 <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
 <script src="js/bundle.js"></script>
-
 </body>
-
 </html>

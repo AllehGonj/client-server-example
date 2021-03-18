@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -e
 
 apt-get update
 apt-get install -y vsftpd

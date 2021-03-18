@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,42 +14,40 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
 <body>
-<section class="hero is-fullheight is-default is-bold">
-
+<section class="section is-fullheight is-default section-light-grey is-medium" style="padding: 0 0 9rem;">
     <nav x-data="initNavbar()" class="navbar is-fresh is-transparent no-shadow" role="navigation"
          aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
                 <div class="navbar-burger" @click="openMobileMenu()">
-                        <span class="menu-toggle">
-                            <span class="icon-box-toggle" :class="{
-                                    'active': mobileOpen,
-                                    '': !mobileOpen
-                                }">
-                                <span class="rotate">
-                                    <i class="icon-line-top"></i>
-                                    <i class="icon-line-center"></i>
-                                    <i class="icon-line-bottom"></i>
-                                </span>
+                    <span class="menu-toggle">
+                        <span class="icon-box-toggle" :class="{
+                                'active': mobileOpen,
+                                '': !mobileOpen
+                            }">
+                            <span class="rotate">
+                                <i class="icon-line-top"></i>
+                                <i class="icon-line-center"></i>
+                                <i class="icon-line-bottom"></i>
                             </span>
                         </span>
+                    </span>
                 </div>
             </div>
 
             <div id="navbar-menu" class="navbar-menu is-static" :class="{
-                        'is-active': mobileOpen,
-                        '': !mobileOpen
-                    }">
+                    'is-active': mobileOpen,
+                    '': !mobileOpen
+                }">
                 <div class="navbar-end">
-                    <a href="#" class="navbar-item is-secondary">
+                    <a href="index.html" class="navbar-item is-secondary">
                         Inicio
                     </a>
                     <a href="information.html" class="navbar-item is-secondary">
                         Informacion
                     </a>
-                    <a href="contact.html" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
+                    <a href="#" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
                         Contacto
                     </a>
                 </div>
@@ -59,98 +56,64 @@
     </nav>
     <nav x-data="initNavbar()" x-on:scroll.window="scroll()" id="navbar-clone" class="navbar is-fresh is-transparent"
          role="navigation" aria-label="main navigation" :class="{
-                'is-active': scrolled,
-                '': !scrolled
-            }">
+            'is-active': scrolled,
+            '': !scrolled
+        }">
         <div class="container">
             <div id="cloned-navbar-menu" class="navbar-menu is-fixed" :class="{
-                        'is-active': mobileOpen,
-                        '': !mobileOpen
-                    }">
+                    'is-active': mobileOpen,
+                    '': !mobileOpen
+                }">
 
                 <div class="navbar-end">
-                    <a href="#" class="navbar-item is-secondary">
+                    <a href="index.html" class="navbar-item is-secondary">
                         Inicio
                     </a>
                     <a href="information.html" class="navbar-item is-secondary">
                         Informacion
                     </a>
-                    <a href="contact.html" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
+                    <a href="#" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
                         Contacto
                     </a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-5 is-offset-1 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">
-                        Ama a los animalitos
-                    </h1>
-                    <h2 class="subtitle is-5 is-muted">Lorem ipsum sit dolor amet is a dummy text used by typography
-                        industry </h2>
-                </div>
-                <div class="column is-5">
-                    <figure class="image is-4by3">
-                        <img src="img/3.png" alt="Description">
-                    </figure>
-                </div>
 
-            </div>
-        </div>
-    </div>
-</section>
+    <br>
 
-<section class="section section-feature-grey is-medium">
     <div class="container">
         <div class="title-wrapper has-text-centered">
-            <h2 class="title is-2">Un gran poder</h2>
-            <h3 class="subtitle is-5 is-muted">Conlleva una gran responsabilidad</h3>
+            <h2 class="title is-2 is-spaced">Contactalos</h2>
+            <h3 class="subtitle is-5 is-muted">A ellos les encanta escuchar de ti</h3>
             <div class="divider is-centered"></div>
         </div>
 
         <div class="content-wrapper">
             <div class="columns">
-                <div class="column is-one-third">
-                    <div class="feature-card is-bordered has-text-centered is-feature-reveal">
-                        <div class="card-title">
-                            <h4>Amistosos</h4>
+                <div class="column is-6 is-offset-3">
+                    <form>
+                        <div class="columns is-multiline">
+                            <div class="column is-6">
+                                <input class="input is-medium" type="text" placeholder="Nombre *">
+                            </div>
+                            <div class="column is-6">
+                                <input class="input is-medium" type="text" placeholder="Apellido *">
+                            </div>
+                            <div class="column is-12">
+                                <input class="input is-medium" type="text" placeholder="Correo *">
+                            </div>
+                            <div class="column is-12">
+                                <textarea class="textarea" rows="6" placeholder=""></textarea>
+                            </div>
+                            <div class="column is-12">
+                                <div class="form-footer has-text-right mt-10">
+                                    <button class="button cta is-large primary-btn form-button raised is-clear">Enviar
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-icon">
-                            <img src="img/icons/web.svg">
-                        </div>
-                        <div class="card-text">
-                            <p>Lorem ipsum sit dolor amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="feature-card is-bordered has-text-centered is-feature-reveal">
-                        <div class="card-title">
-                            <h4>Nobles</h4>
-                        </div>
-                        <div class="card-icon">
-                            <img src="img/icons/rocket.svg">
-                        </div>
-                        <div class="card-text">
-                            <p>Lorem ipsum sit dolor amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="feature-card is-bordered has-text-centered is-feature-reveal">
-                        <div class="card-title">
-                            <h4>Juguetones</h4>
-                        </div>
-                        <div class="card-icon">
-                            <img src="img/icons/light-bulb.svg">
-                        </div>
-                        <div class="card-text">
-                            <p>Lorem ipsum sit dolor amet</p>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -201,7 +164,5 @@
 
 <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
 <script src="js/bundle.js"></script>
-
 </body>
-
 </html>
